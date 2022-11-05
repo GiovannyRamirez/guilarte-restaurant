@@ -4,6 +4,7 @@ module.exports = {
         MENU: "/menu",
         MESAS: "/mesas",
         MESEROS: "/meseros",
+        TIPOS_SERVICIO: "/tipos",
         ORDENES: "/ordenes",
     },
 }

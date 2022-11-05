@@ -13,6 +13,8 @@ This launch a server with routes to get
   - Menus
   - Tables
   - Waiters
+  - Service types
+
 And to post
   - Service orders
 
