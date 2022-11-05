@@ -1,24 +1,23 @@
 ---
-title: Node HTTP Module
-description: A HTTP module server
+title: Restaurante Guilarte API
+description: An API to get data related to restaurant
 tags:
-  - http
   - nodejs
   - javascript
+  - MySQL
 ---
 
-# HTTP Module Example
+# Guilarte Restaurant API
 
-This example starts an [HTTP Module](https://nodejs.org/api/http.html) server.
+This launch a server with routes to get
+  - Menus
+  - Tables
+  - Waiters
+And to post
+  - Service orders
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/ZweBXA)
+# How to use
 
-## 💁‍♀️ How to use
-
-- Install dependencies `yarn`
-- Connect to your Railway project `railway link`
-- Start the development server `railway run yarn start`
-
-## 📝 Notes
-
-The server started simply returns a `Hello World` payload. The server code is located in `server.mjs`.
+- Set your environment variables with MySQL database connection values in a *.env file*
+- Install dependencies `npm install`
+- Start development server `npm run start:dev`
