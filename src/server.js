@@ -1,6 +1,5 @@
 require("dotenv").config()
 const express = require("express")
-const cors = require("cors")
 
 const { ENDPOINTS } = require("./endpoints")
 const menuRutas = require("./rutas/menuRuta")
@@ -14,7 +13,6 @@ const PORT = process.env.PORT || 8000
 const app = express()
 
 app.use(express.json())
-app.use(cors())
 
 app.use(ENDPOINTS.MENU, menuRutas)
 app.use(ENDPOINTS.MESAS, mesasRutas)
@@ -24,5 +22,5 @@ app.use(ENDPOINTS.TIPOS_SERVICIO, tiposServicioRutas)
 app.use(ENDPOINTS.ORDENES, ordenesRutas)
 
 app.listen(PORT, () => {
-  console.log(`Server listening on http://localhost:${PORT}`)
+  console.log(`Server listening on PORT: ${PORT}`)
 })
