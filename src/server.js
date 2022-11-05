@@ -2,10 +2,10 @@ require("dotenv").config()
 const express = require("express")
 const cors = require("cors")
 
-const { ENDPOINTS } = require("./src/endpoints")
-const menuRutas = require("./src/rutas/menuRuta")
-const mesasRutas = require("./src/rutas/mesasRuta")
-const meserosRutas = require("./src/rutas/meserosRuta")
+const { ENDPOINTS } = require("./endpoints")
+const menuRutas = require("./rutas/menuRuta")
+const mesasRutas = require("./rutas/mesasRuta")
+const meserosRutas = require("./rutas/meserosRuta")
 
 const PORT = process.env.PORT || 8000
 const app = express()
