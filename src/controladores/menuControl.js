@@ -1,4 +1,4 @@
-const pool = require("../dbConfig")
+const pool = require("../database/dbConfig")
 const { QUERIES } = require("../queries")
 
 module.exports = {
